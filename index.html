@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion Uno</title>
+    <!-- icono del la pestaña -->
+    <link rel="shortcut icon" href="./xyz-1.png">
+    <!-- link de la libreria para leer las etiquetas de aframe -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>    
+</head>
+<body>
+<!-- toda escena empieza con la etiqueta a-escene  -->
+  <a-scene>
+    
+<!-- objetos primitivos de a-frame} -->
+    <a-triangle color="#CCC" position="-0.080 0.263 0" scale="2 2 2" color="red"  vertex-c="1 -1 0"></a-triangle>
+    <a-ring color="teal" position=" 0 0.496 0" radius-inner="1" radius-outer="2"></a-ring>
+    <a-cone color="tomato" radius-bottom="2" radius-top="0.5"></a-cone>
+ <!-- piso -->
+
+    <a-plane position="1 0 1" scale="100 100 100 " rotation="-90 0 0" color="pink"></a-plane>
+
+<!-- cielo -->
+    <a-sky src="./imagen-equi3.jpg"></a-sky>
+
+<!-- imagenes -->
+    <a-image src="./xyz-1.png" scale="2 2 2" position="-2.435 1 0.3" ></a-image>
+    <a-image src="./xyz-1.png" scale="2 2 2" position="2.435 1 0.3"  rotation="0 180 0"></a-image>
+
+<!-- camara -->
+    <a-camera position="-0.37426 1.301 5.604"  rotation="-15.011494232427573 9.626 0" ></a-camera>
+ 
+  </a-scene>
+</body>
+</html>
